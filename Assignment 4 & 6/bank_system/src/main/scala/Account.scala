@@ -1,7 +1,7 @@
 class Account(val code: String, val balance: Double) {
 
   // Withdraw an amount from the account, returning either an error message or a new Account
-  def withdraw(amount: Double): Either[String, Account] = {
+  def withdraw(amount: Double): Either[String, Account] = synchronized {
     if (amount < 0) {
       Left("Withdrawal amount cannot be negative")
     } else if (amount > balance) {
@@ -12,7 +12,7 @@ class Account(val code: String, val balance: Double) {
   }
 
   // Deposit an amount to the account, returning either an error message or a new Account
-  def deposit(amount: Double): Either[String, Account] = {
+  def deposit(amount: Double): Either[String, Account] = synchronized {
     if (amount < 0) {
       Left("Deposit amount cannot be negative")
     } else {

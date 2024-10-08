@@ -4,7 +4,7 @@ object TransactionStatus extends Enumeration {
   val SUCCESS, PENDING, FAILED = Value
 }
 
-class Transaction(val from: String, val to: String, val amount: Double, val retries: Int = 3) {
+class Transaction(val from: String, val to: String, val amount: Double, var retries: Int = 3) {
   private var status: TransactionStatus.Value = TransactionStatus.PENDING
   private var attempts = 0
 
