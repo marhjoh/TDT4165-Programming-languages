@@ -201,4 +201,6 @@ class AccountTransferTests extends FunSuite {
     assert(bank.completedTransactions.size == submitted)
     assert(bank.transactionsPool.isEmpty)
   }
+
+  
 }
