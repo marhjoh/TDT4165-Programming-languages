@@ -1,5 +1,29 @@
 object Main extends App {
-	// Task 1a
+	// Test Part II Task 1.2
+    val account1 = new Account("ACC123", 1000.0)
+
+    // Test deposit
+    val newAccount = account1.deposit(500) match {
+        case Right(acc) => acc
+        case Left(error) => println(error); account1
+    }
+    println(newAccount) // Should print: Account(ACC123, Balance: 1500.0)
+
+    // Test withdraw
+    val withdrawResult = newAccount.withdraw(200) match {
+        case Right(acc) => acc
+        case Left(error) => println(error); newAccount
+    }
+    println(withdrawResult) // Should print: Account(ACC123, Balance: 1300.0)
+
+    // Test insufficient funds
+    val insufficientFunds = newAccount.withdraw(2000) match {
+        case Right(acc) => acc
+        case Left(error) => println(error); newAccount
+    }
+    // Should print: Insufficient funds
+    
+    // Task 1a
 	val array = Array.tabulate(50)(i => i + 1)
     println(array.mkString(", "))
 
