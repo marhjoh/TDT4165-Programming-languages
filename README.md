@@ -1,13 +1,14 @@
 # TDT4165 — Programming Languages
 
 ## Overview
-This repository contains the solution to Assignments for the course TDT4165: Programming Languages, focusing on the introduction to Oz programming language. 
+This repository contains the solution to Assignments for the course TDT4165: Programming Languages, focusing on the introduction to Oz programming language, Scala and Prolog. 
 
 ## Prerequisites
-- For the Oz assignments (Assignment 1, 2, 3, 5 & 7) you need to have [Mozart2](http://mozart2.org/) installed. You can also access Mozart2 via NTNU's Software Farm. Additionally, you can use Emacs or Visual Studio Code with the Oz extension for development, though it will still be executed via the Mozart platform.
+- For the Oz assignments (Assignment 1, 2, 3) you need to have [Mozart2](http://mozart2.org/) installed. You can also access Mozart2 via NTNU's Software Farm. Additionally, you can use Emacs or Visual Studio Code with the Oz extension for development, though it will still be executed via the Mozart platform.
 
 - For the Scala assignments (Assignment 4 & 6), you need [Scala](https://www.scala-lang.org/download/) and [sbt](https://www.scala-sbt.org/download.html) installed. You can also set up an IDE like Visual Studio Code or IntelliJ IDEA with the Scala plugin.
 
+- For the Prolog assignments (Assignment 5 & 7), you need [SWI-Prolog](https://www.swi-prolog.org/download) installed. You can use the SWI-Prolog IDE or integrate it into Visual Studio Code using the Prolog extension.
 
 ## Assignments
 ### Assignment 1
